@@ -1,0 +1,38 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form input {
+  padding: 5px;
+  outline: none;
+  margin: 10px;
+  border-radius: 7px;
+  transition: 300ms;
+  border-bottom: 1px white solid;
+}
+.animate {
+  animation: rotatePanel 2s;
+}
+.animate2 {
+  animation: rotatePanel2 2s;
+}
+@keyframes rotatePanel {
+  0% {
+    transform: scalex(-50%);
+  }
+  50% {
+    transform: scalex(100%);
+  }
+}
+@keyframes rotatePanel2 {
+  0% {
+    transform: scalex(-50%);
+  }
+  50% {
+    transform: scalex(100%);
+  }
+}
+form :focus {
+  border-bottom: 1px #1a6aff solid;
+}

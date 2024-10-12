@@ -1,0 +1,23 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  input,
+  textarea {
+    width: fit-content;
+    outline: none;
+    margin: 5px;
+    padding: 4px;
+    border-radius: 5px;
+    border-bottom: transparent 3px solid;
+    transition: 500ms;
+  }
+
+  textarea:focus {
+    border-bottom: #1a6aff 3px solid;
+  }
+  input:focus {
+    border-bottom: #1a6aff 3px solid;
+  }
+}
